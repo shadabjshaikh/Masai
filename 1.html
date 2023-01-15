@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: grid;
+            gap: 20px 20px;
+            grid-template-columns: 
+            repeat(2, 100px);
+            grid-template-rows: 
+            repeat(3, 100px)
+               
+        }
+
+        .cont>div{
+            
+            }
+
+        .cont>div:nth-child(1){
+            background-color: maroon;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+           
+        }
+
+        .cont>div:nth-child(2){
+            background-color: aqua;
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .cont>div:nth-child(3){
+            background-color: yellowgreen;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .cont>div:nth-child(4){
+            background-color: wheat;
+            grid-column-start: 2;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .cont>div:nth-child(5){
+            background-color: turquoise;
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>
