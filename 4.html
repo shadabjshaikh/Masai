@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalCulator</title>
+    <style>
+        .cont{
+            display: grid;
+            grid-template-columns: 
+            repeat(4,80px);
+            grid-template-rows:
+            repeat(5, 80px) ;
+            gap: 10px 10px;
+        }
+
+        .cont>div{
+            font-size: 25px;
+            background-color: white;
+            color: black;
+            border: 1px solid gray;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .cont>div:nth-child(1){
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+        }
+        .cont>div:nth-child(14){
+            background-color: tomato;
+        }
+        
+        .cont>div:nth-child(5){
+            background-color: black;
+            color: white
+        }         
+
+        .cont>div:nth-child(9){
+            background-color: black;
+            color: white
+       }
+
+        .cont>div:nth-child(13){
+            background-color: black;
+            color: white                      
+        }
+
+        .cont>div:nth-child(17){
+            background-color: black;
+            color: white                      
+        }
+
+        .cont>div:nth-child(16){
+            background-color: black;
+            color: white                      
+        }
+    </style> 
+</head>                                            
+<body>      
+    <div class="cont">
+        <div>`</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>x</div>
+        <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+    </div>
+</body>
+</html>
