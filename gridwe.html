@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .keyboard{
+            display: grid;
+            grid-template-columns: (12,1fr);
+            grid-template-rows: (5,50px);
+            gap: 10px;
+            background-color: aqua;
+            
+            
+        }
+
+        .keyboard>button{
+            font-size: 17px;
+            background-color: black;
+            color: beige;
+            box-shadow: inset;            
+        }
+
+        #space{
+            grid-column-start:5;
+            grid-column-end:9;
+            grid-row-start:5;
+            grid-row-end:6;
+        }
+
+        #enter{
+            grid-column-start:11;
+            grid-column-end:13;
+            grid-row-start:3;
+            grid-row-end:4;       }
+
+        #shift{
+            grid-column-start:11;
+            grid-column-end:13;
+            grid-row-start:4;
+            grid-row-end:5;
+        }
+    </style>
+</head>
+<body>
+    <div class="keyboard">
+        <button>~</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>Delete</button>
+        <button>Tab</button>
+        <button>q</button>
+        <button>w</button>
+        <button>e</button>
+        <button>r</button>
+        <button>t</button>
+        <button>y</button>
+        <button>u</button>
+        <button>i</button>
+        <button>o</button>
+        <button>p</button>
+        <button>/</button>
+        <button>Caps</button>
+        <button>a</button>
+        <button>s</button>
+        <button>d</button>
+        <button>f</button>
+        <button>g</button>
+        <button>h</button>
+        <button>j</button>
+        <button>k</button>
+        <button>l</button>
+        <button id="enter">Enter</button>
+        <button>Shift</button>
+        <button>z</button>
+        <button>x</button>
+        <button>c</button>
+        <button>v</button>
+        <button>b</button>
+        <button>n</button>
+        <button>m</button>
+        <button><</button>
+        <button>></button>
+        <button id="shift">Shift</button>
+        <button>O</button>
+        <button>Cntrl</button>
+        <button>Option</button>
+        <button>Alt</button>
+        <button  id="space">Space</button>
+        <button>alt</button>
+        <button>Option</button>
+        <button><-</button>
+        <button>-></button>
+        
+        
+
+    </div>
+
+</body>
+</html>
