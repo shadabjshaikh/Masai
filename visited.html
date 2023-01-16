@@ -4,27 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Visited Page</title>
     <style>
       /* All Your css here  */
     </style>
   </head>
-
   <body>
     <div class="nav">
       <h1>Masai Country Records</h1>
       <a href="./index.html">Home</a>
       <a href="./visited.html">Visited</a>
     </div>
-    <select id="sort">
-      <option value="">Sort By Population</option>
-      <option value="asc">Ascending</option>
-      <option value="desc">Descending</option>
-    </select>
-    <form>
-      <input type="text" placeholder="Search" id="search" />
-      <input type="submit" value="Search" />
-    </form>
+    <h1 id="total">
+      You have visited total <span id="visited-total">0</span> countries.
+    </h1>
     <table>
       <thead>
         <tr>
@@ -32,7 +25,7 @@
           <th>Country</th>
           <th>Rank</th>
           <th>Population</th>
-          <th>Visited</th>
+          <th>Remove</th>
         </tr>
       </thead>
       <tbody>
@@ -41,7 +34,6 @@
     </table>
   </body>
   <script>
-    // Write all JS here
-    const url = `https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-countries`;
+    // Write All JS Here
   </script>
 </html>
